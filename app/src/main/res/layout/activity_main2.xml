@@ -30,6 +30,7 @@
                 android:gravity="center"
                 android:text="分析报告"
                 android:textColor="@color/black"
+                android:paddingTop="10dp"
                 android:textSize="35sp" />
 
 
@@ -80,6 +81,7 @@
             android:background="@drawable/shape"
             android:padding="15dp">
             <TextView
+                android:id="@+id/TV3.1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="高数"
@@ -101,6 +103,7 @@
             android:background="@drawable/shape"
             android:padding="15dp">
             <TextView
+                android:id="@+id/TV3.2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="大英"
@@ -125,6 +128,7 @@
             android:padding="15dp">
 
             <TextView
+                android:id="@+id/TV3.3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="计导"
@@ -150,6 +154,7 @@
             android:background="@drawable/shape"
             android:padding="15dp">
             <TextView
+                android:id="@+id/TV3.4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="体育"

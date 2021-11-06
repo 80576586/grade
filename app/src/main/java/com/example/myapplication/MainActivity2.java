@@ -24,6 +24,10 @@ public class MainActivity2 extends AppCompatActivity {
         TextView tva3_2=findViewById(R.id.tva3_2);
         TextView tva3_3=findViewById(R.id.tva3_3);
         TextView tva3_4=findViewById(R.id.tva3_4);
+        TextView TV3_1=findViewById(R.id.TV3_1);
+        TextView TV3_2=findViewById(R.id.TV3_2);
+        TextView TV3_3=findViewById(R.id.TV3_3);
+        TextView TV3_4=findViewById(R.id.TV3_4);
         //ImageView iv1=findViewById(R.id.iv1);
         Bundle bundleL=intent.getExtras();
         Bundle bundleM=intent.getExtras();
@@ -31,6 +35,11 @@ public class MainActivity2 extends AppCompatActivity {
         Bundle bundleO=intent.getExtras();
         Bundle bundleP=intent.getExtras();
         Bundle bundleQ=intent.getExtras();
+        Bundle bundleR=intent.getExtras();
+        Bundle bundleS=intent.getExtras();
+        Bundle bundleT=intent.getExtras();
+        Bundle bundleU=intent.getExtras();
+
 
         double A1=bundleL.getDouble("GRADE1");
         double B1=bundleM.getDouble("GRADE2");
@@ -38,6 +47,14 @@ public class MainActivity2 extends AppCompatActivity {
         double D1=bundleO.getDouble("GRADE4");
         double E1=bundleP.getDouble("PJF");
         double F1=bundleQ.getDouble("FC");
+        String G1=bundleR.getString("SUB1");
+        String H1=bundleR.getString("SUB2");
+        String I1=bundleR.getString("SUB3");
+        String J1=bundleR.getString("SUB4");
+        TV3_1.setText(G1);
+        TV3_2.setText(H1);
+        TV3_3.setText(I1);
+        TV3_4.setText(J1);
         ImageView iv1=findViewById(R.id.iv1);
 
 
@@ -98,7 +115,6 @@ public class MainActivity2 extends AppCompatActivity {
             tva3_4.setText("建议：你已经处在挂科边缘了！");
         if (D1<60)
             tva3_4.setText("建议：已挂科，要投入更多的时间用于学习！");
-        //TV1.setText(String.valueOf(A1));
         backButton1 = (Button) findViewById(R.id.backButton1);
         backButton1.setOnClickListener(new View.OnClickListener() {
             @Override

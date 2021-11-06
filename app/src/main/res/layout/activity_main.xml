@@ -28,16 +28,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:paddingTop="8dp"
                 android:text="成绩分析"
-                android:textSize="35sp"
-                />
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_alignParentEnd="true"
-                android:background="@mipmap/text" />
+                android:background="@mipmap/text"
+                android:paddingTop="8dp" />
 
 
 
@@ -78,9 +79,9 @@
                             android:orientation="horizontal"
                             android:layout_weight="1">
                             <TextView
+                                android:id="@+id/TVG1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:text="高数"
                                 android:textSize="20sp"
                                 android:gravity="center">
 
@@ -161,9 +162,9 @@
                             android:orientation="horizontal"
                             android:layout_weight="1">
                             <TextView
+                                android:id="@+id/TVG3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:text="计导"
                                 android:textSize="20sp"
                                 android:gravity="center">
 
@@ -253,9 +254,9 @@
                             android:orientation="horizontal"
                             android:layout_weight="1">
                             <TextView
+                                android:id="@+id/TVG2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:text="大英"
                                 android:textSize="20sp"
                                 android:gravity="center">
 
@@ -336,9 +337,9 @@
                             android:orientation="horizontal"
                             android:layout_weight="1">
                             <TextView
+                                android:id="@+id/TVG4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:text="体育"
                                 android:textSize="20sp"
                                 android:gravity="center">
 

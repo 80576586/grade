@@ -19,7 +19,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity3 extends AppCompatActivity {
-    private Button button1;
     private EditText editText1;
     private EditText editText2;
     private EditText editText3;
@@ -28,10 +27,12 @@ public class MainActivity3 extends AppCompatActivity {
     private EditText editText6;
     private EditText editText7;
     private EditText editText8;
-    //Context context;
+    private EditText et1;
+    private EditText et2;
+    private EditText et3;
+    private EditText et4;
+
    Bundle bundle = new Bundle();
-   //Intent intent =new Intent();
-   //Toast toast=new Toast(getApplicationContext());
 
 
 
@@ -39,7 +40,10 @@ public class MainActivity3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
-
+        et1=findViewById(R.id.et1);
+        et2=findViewById(R.id.et2);
+        et3=findViewById(R.id.et3);
+        et4=findViewById(R.id.et4);
         editText1=findViewById(R.id.editText1);
         editText2=findViewById(R.id.editText2);
         editText3=findViewById(R.id.editText3);
@@ -48,36 +52,35 @@ public class MainActivity3 extends AppCompatActivity {
        editText6=findViewById(R.id.editText6);
        editText7=findViewById(R.id.editText7);
        editText8=findViewById(R.id.editText8);
-       button1 = (Button) findViewById(R.id.button1);
-       button1.setOnClickListener(new View.OnClickListener() {
+       Button btn1 = (Button) findViewById(R.id.btn1);
+       btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent();//Inten t intent = new Intent();
+                Intent intent = new Intent();
                 String a = String.valueOf(editText1.getText());
                 String b = editText2.getText().toString();
                 String c = editText3.getText().toString();
                 String d = editText4.getText().toString();
                 String e = editText5.getText().toString();
                 String f = editText6.getText().toString();
-                String g = editText7.getText().toString().trim();
-                String h = editText8.getText().toString().trim();
+                String g = editText7.getText().toString();
+                String h = editText8.getText().toString();
+                String subject1=et1.getText().toString();
+                String subject2=et2.getText().toString().trim();
+                String subject3=et3.getText().toString().trim();
+                String subject4=et4.getText().toString().trim();
+
                 double a1 = 0,b1=0,c1=0,d1=0,e1=0,f1=0,g1=0,h1=0;
                 if (a.length()>0)
                     a1=Double.parseDouble(a);
-                //String b = String.valueOf(editText2.getText());
                 if (b.length()>0)
                     b1=Double.parseDouble(b);
-                //int b=editText2.getAccessibilityLiveRegion();
-                //String c = String.valueOf(editText3.getText());
                 if (c.length()>0)
                     c1=Double.parseDouble(c);
-                //String d = String.valueOf(editText4.getText());
                 if (d.length()>0)
                     d1=Double.parseDouble(d);
                 if (e.length()>0)
                     e1=Double.parseDouble(e);
-                //String e = String.valueOf(editText5.getText());
-                //String f = String.valueOf(editText6.getText());
                 if (f.length()>0)
                     f1=Double.parseDouble(f);
                 //String g = String.valueOf(editText7.getText());
@@ -85,9 +88,9 @@ public class MainActivity3 extends AppCompatActivity {
                     g1=Double.parseDouble(g);
                 if (h.length()>0)
                     h1=Double.parseDouble(h);
-                if (a.length()<1||c.length()<1||e.length()<1||g.length()<1.||b.length()<1||d.length()<1||f.length()<1||h.length()<1){
+                if (a.length()<1||c.length()<1||e.length()<1||g.length()<1.||b.length()<1||d.length()<1||f.length()<1||h.length()<1||subject1.length()<1||subject2.length()<1||subject3.length()<1||subject4.length()<1){
                     Toast.makeText(MainActivity3.this, "请输入完整", Toast.LENGTH_SHORT).show(); }
-                else if (a1>100||c1>100||e1>100){
+                else if (a1>100||c1>100||e1>100||g1>100){
 
                     Toast.makeText(MainActivity3.this, "请输入正确的成绩", Toast.LENGTH_SHORT).show();}
 
@@ -103,6 +106,12 @@ public class MainActivity3 extends AppCompatActivity {
                     Bundle bundle6 = new Bundle();
                     Bundle bundle7 = new Bundle();
                     Bundle bundle8 = new Bundle();
+                    Bundle bundle9 = new Bundle();
+                    Bundle bundle10 = new Bundle();
+                    Bundle bundle11= new Bundle();
+                    Bundle bundle12= new Bundle();
+
+
                     bundle1.putDouble("grade1",a1);
                     bundle2.putDouble("credit1",b1);
                     bundle3.putDouble("grade2",c1);
@@ -111,6 +120,10 @@ public class MainActivity3 extends AppCompatActivity {
                     bundle6.putDouble("credit3",f1);
                     bundle7.putDouble("grade4",g1);
                     bundle8.putDouble("credit4",h1);
+                    bundle9.putString("subject1",subject1);
+                    bundle10.putString("subject2",subject2);
+                    bundle11.putString("subject3",subject3);
+                    bundle12.putString("subject4",subject4);
 
                 intent.putExtras(bundle1);
                 intent.putExtras(bundle2);
@@ -120,10 +133,16 @@ public class MainActivity3 extends AppCompatActivity {
                 intent.putExtras(bundle6);
                 intent.putExtras(bundle7);
                 intent.putExtras(bundle8);
+                intent.putExtras(bundle9);
+                intent.putExtras(bundle10);
+                intent.putExtras(bundle11);
+                intent.putExtras(bundle12);
+
 
                 intent.setClass(MainActivity3.this, MainActivity.class);
 
-                startActivity(intent);}}
+                startActivity(intent);
+                finish();}}
 
 
         });
