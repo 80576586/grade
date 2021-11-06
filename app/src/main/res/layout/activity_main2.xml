@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <LinearLayout
+        android:id="@+id/li1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@mipmap/background">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/backButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:background="@mipmap/back" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/backButton1"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:text="分析报告"
+                android:textColor="@color/black"
+                android:textSize="35sp" />
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:layout_marginHorizontal="50dp"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="20dp"
+                android:padding="20dp"
+                android:background="@drawable/shape"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/TV1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="20dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/shape"
+                >
+
+            </TextView>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/shape"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="高数"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tva3.1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/shape"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="大英"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tva3.2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/shape"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="计导"
+                android:textSize="20sp"
+                >
+
+
+            </TextView>
+            <TextView
+                android:id="@+id/tva3.3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/shape"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="体育"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tva3.4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

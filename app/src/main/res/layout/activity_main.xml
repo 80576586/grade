@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@mipmap/background">
+    <LinearLayout
+        android:id="@+id/yi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="78dp"
+                android:layout_height="53dp"
+                android:background="@mipmap/back" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="成绩分析"
+                android:textSize="35sp"
+                />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@mipmap/text" />
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1.5">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/shape"
+                        android:layout_margin="5dp"
+                        android:padding="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="高数"
+                                android:textSize="20sp"
+                                android:gravity="center">
+
+                            </TextView>
+                            <TextView
+                                android:id="@+id/tvg1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="20sp"
+                                >
+
+                            </TextView>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="成绩"
+                                    android:textSize="15sp"
+                                    android:gravity="center">
+
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/tv1.1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:textSize="15sp">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="绩点"
+                                    android:textSize="15sp"
+                                    android:gravity="center">
+
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/tv1.2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:textSize="15sp">
+
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/shape"
+                        android:padding="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="计导"
+                                android:textSize="20sp"
+                                android:gravity="center">
+
+                            </TextView>
+                            <TextView
+                                android:id="@+id/tvg3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="20sp"
+                                >
+
+                            </TextView>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="成绩"
+                                    android:textSize="15sp"
+                                    android:gravity="center">
+
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/tv3.1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:textSize="15sp">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="绩点"
+                                    android:textSize="15sp"
+                                    android:gravity="center">
+
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/tv3.2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:textSize="15sp">
+
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/shape"
+                        android:layout_margin="5dp"
+                        android:padding="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="大英"
+                                android:textSize="20sp"
+                                android:gravity="center">
+
+                            </TextView>
+                            <TextView
+                                android:id="@+id/tvg2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="20sp"
+                                >
+
+                            </TextView>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="成绩"
+                                    android:textSize="15sp"
+                                    android:gravity="center">
+
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/tv2.1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:textSize="15sp">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="绩点"
+                                android:textSize="15sp"
+                                android:gravity="center">
+
+                            </TextView>
+                            <TextView
+                                android:id="@+id/tv2.2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="15sp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/shape"
+                        android:padding="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="体育"
+                                android:textSize="20sp"
+                                android:gravity="center">
+
+                            </TextView>
+                            <TextView
+                                android:id="@+id/tvg4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="20sp"
+                                >
+
+                            </TextView>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="成绩"
+                                android:textSize="15sp"
+                                android:gravity="center">
+
+                            </TextView>
+
+                                <TextView
+                                    android:id="@+id/tv4.1"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:textSize="15sp">
+
+                                </TextView>
+                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="绩点"
+                                    android:textSize="15sp"
+                                    android:gravity="center">
+
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/tv4.2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:textSize="15sp">
+
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv2.0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                >
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape"
+                android:padding="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="总绩点"
+                        android:textSize="15sp"
+                        android:gravity="center_vertical"></TextView>
+                    <TextView
+                        android:id="@+id/tv2.1.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:gravity="center_vertical"></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="总学分"
+                        android:textSize="15sp"
+                        android:gravity="center_vertical"></TextView>
+                    <TextView
+                        android:id="@+id/tv2.1.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:gravity="center_vertical"></TextView>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/shape"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="稳定性"
+                    android:textSize="20sp"
+                    android:gravity="center">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/tv3.0.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20sp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/shape"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="综合评级"
+                    android:textSize="20sp"
+                    android:gravity="center">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/tv3.0.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:gravity="center">
+
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+
+</LinearLayout>
