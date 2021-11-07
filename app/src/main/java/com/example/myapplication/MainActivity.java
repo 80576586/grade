@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         Bundle bundle7=intent.getExtras();
         Bundle bundle8=intent.getExtras();
         Bundle bundle9=intent.getExtras();
-        Bundle bundle10=intent.getExtras();
+        //Bundle bundle10=intent.getExtras();
 
         double a1=bundle1.getDouble("grade1");
         double b1=bundle2.getDouble("credit1");
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         double i=b1+d1+f1+h1;
-        double j=a1+c1+e1+g1;
+        //double j=a1+c1+e1+g1;
         double a2=0,c2=0,e2=0,g2=0;
         double pjf=(a1*b1+c1*d1+e1*f1+g1*h1)/i;
         DecimalFormat pjf2=new DecimalFormat("0.00");
@@ -341,8 +341,8 @@ public class MainActivity extends AppCompatActivity {
         textView5.setText(String.valueOf(e1));
         textView7.setText(String.valueOf(g1));
         textView9.setText(String.valueOf(i));
-        textViewTv2_0.setText(String.valueOf(pjf2.format(pjf)));
-        textView2_1_1.setText(String.valueOf( zjd1.format(zjd)));
+        textViewTv2_0.setText(pjf2.format(pjf));
+        textView2_1_1.setText( zjd1.format(zjd));
 
         String A=String.valueOf(textView1.getText());
         String B=String.valueOf(textView3.getText());
@@ -404,7 +404,7 @@ public class MainActivity extends AppCompatActivity {
                     // Intent intent = new Intent();
                     intent.setClass(MainActivity.this,MainActivity2.class);
                     startActivity(intent);
-                    finish();
+
                 }
             });
         backButton = (Button)findViewById(R.id.backButton);

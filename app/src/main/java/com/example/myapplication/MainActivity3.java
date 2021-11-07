@@ -142,7 +142,7 @@ public class MainActivity3 extends AppCompatActivity {
                 intent.setClass(MainActivity3.this, MainActivity.class);
 
                 startActivity(intent);
-                finish();}}
+                }}
 
 
         });
