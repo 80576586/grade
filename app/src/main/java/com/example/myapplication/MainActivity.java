@@ -404,7 +404,7 @@ public class MainActivity extends AppCompatActivity {
                     // Intent intent = new Intent();
                     intent.setClass(MainActivity.this,MainActivity2.class);
                     startActivity(intent);
-
+                    finish();
                 }
             });
         backButton = (Button)findViewById(R.id.backButton);
