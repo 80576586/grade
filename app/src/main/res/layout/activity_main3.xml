@@ -24,173 +24,366 @@
             android:textStyle="italic"/>
 
 
-
-
-        <EditText
-            android:id="@+id/et1"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="科目"
-            android:textSize="20sp"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="15dp"
-            android:maxLines="1"
-            android:paddingHorizontal="5dp"
-            android:inputType="text"
-            android:background="@drawable/shape"
-            android:layout_weight="1"/>
-        <EditText
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="科目"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical">
+
+            </TextView>
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="科目"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp"
+                android:paddingHorizontal="5dp"
+                android:inputType="text"
+                android:background="@drawable/shape"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="成绩"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical">
+
+            </TextView>
+            <EditText
             android:id="@+id/editText1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:hint="成绩"
             android:textSize="20sp"
-            android:layout_marginStart="50dp"
             android:layout_marginEnd="30dp"
             android:layout_marginTop="5dp"
             android:maxLines="1"
             android:paddingHorizontal="5dp"
             android:inputType="numberDecimal"
             android:background="@drawable/shape"
-            android:layout_weight="1"/>
-        <EditText
-            android:id="@+id/editText2"
+            />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="学分"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="30dp"
-            android:maxLines="1"
-            android:textSize="20sp"
-            android:inputType="numberDecimal"
-            android:paddingHorizontal="5dp"
-            android:background="@drawable/shape"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"/>
-        <EditText
-            android:id="@+id/et2"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="学分"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical">
+
+            </TextView>
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="学分"
+                android:layout_marginEnd="30dp"
+                android:maxLines="1"
+                android:textSize="20sp"
+                android:inputType="numberDecimal"
+                android:paddingHorizontal="5dp"
+                android:background="@drawable/shape"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="科目"
-            android:textSize="20sp"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="15dp"
-            android:maxLines="1"
-            android:paddingHorizontal="5dp"
-            android:inputType="text"
-            android:background="@drawable/shape"
-            android:layout_weight="1"/>
-        <EditText
-            android:id="@+id/editText3"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+
+                android:gravity="center_vertical"
+                android:text="科目"
+                android:textSize="22sp"
+                android:textStyle="bold">
+
+            </TextView>
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="科目"
+                android:textSize="20sp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="15dp"
+                android:maxLines="1"
+                android:paddingHorizontal="5dp"
+                android:inputType="text"
+                android:background="@drawable/shape" />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="成绩"
-            android:textSize="20sp"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="5dp"
-            android:maxLines="1"
-            android:inputType="numberDecimal"
-            android:paddingHorizontal="5dp"
-            android:background="@drawable/shape"
-            android:layout_weight="1"/>
-        <EditText
-            android:id="@+id/editText4"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="成绩"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical">
+
+            </TextView>
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="成绩"
+                android:textSize="20sp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:paddingHorizontal="5dp"
+                android:background="@drawable/shape" />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="学分"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="30dp"
-            android:maxLines="1"
-            android:inputType="numberDecimal"
-            android:background="@drawable/shape"
-            android:paddingHorizontal="5dp"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"/>
-        <EditText
-            android:id="@+id/et3"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="学分"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical">
+
+            </TextView>
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="学分"
+                android:layout_marginEnd="30dp"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:background="@drawable/shape"
+                android:paddingHorizontal="5dp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="科目"
-            android:textSize="20sp"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="15dp"
-            android:maxLines="1"
-            android:paddingHorizontal="5dp"
-            android:inputType="text"
-            android:background="@drawable/shape"
-            android:layout_weight="1"/>
-        <EditText
-            android:id="@+id/editText5"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="科目"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical">
+
+            </TextView>
+            <EditText
+                android:id="@+id/et3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="科目"
+                android:textSize="20sp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="15dp"
+                android:maxLines="1"
+                android:paddingHorizontal="5dp"
+                android:inputType="text"
+                android:background="@drawable/shape" />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="成绩"
-            android:textSize="20sp"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="5dp"
-            android:maxLines="1"
-            android:inputType="numberDecimal"
-            android:paddingHorizontal="5dp"
-            android:background="@drawable/shape"
-            android:layout_weight="1"/>
-        <EditText
-            android:id="@+id/editText6"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="成绩"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical">
+
+            </TextView>
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="成绩"
+                android:textSize="20sp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:paddingHorizontal="5dp"
+                android:background="@drawable/shape" />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="学分"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="30dp"
-            android:maxLines="1"
-            android:inputType="numberDecimal"
-            android:background="@drawable/shape"
-            android:layout_weight="1"
-            android:paddingHorizontal="5dp"
-            android:layout_marginTop="5dp"/>
-        <EditText
-            android:id="@+id/et4"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="学分"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical">
+
+            </TextView>
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="学分"
+                android:layout_marginEnd="30dp"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:background="@drawable/shape"
+                android:paddingHorizontal="5dp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="科目"
-            android:textSize="20sp"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="30dp"
-            android:maxLines="1"
-            android:paddingHorizontal="5dp"
-            android:layout_marginTop="15dp"
-            android:inputType="text"
-            android:background="@drawable/shape"
-            android:layout_weight="1"/>
-        <EditText
-            android:id="@+id/editText7"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="科目"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical">
+
+            </TextView>
+            <EditText
+                android:id="@+id/et4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="科目"
+                android:textSize="20sp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="15dp"
+                android:maxLines="1"
+                android:paddingHorizontal="5dp"
+                android:inputType="text"
+                android:background="@drawable/shape" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="成绩"
-            android:textSize="20sp"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="5dp"
-            android:maxLines="1"
-            android:inputType="numberDecimal"
-            android:paddingHorizontal="5dp"
-            android:background="@drawable/shape"
-            android:layout_weight="1"/>
-        <EditText
-            android:id="@+id/editText8"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="成绩"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical">
+
+            </TextView>
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="成绩"
+                android:textSize="20sp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:paddingHorizontal="5dp"
+                android:background="@drawable/shape" />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="学分"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="30dp"
-            android:maxLines="1"
-            android:inputType="numberDecimal"
-            android:background="@drawable/shape"
-            android:paddingHorizontal="5dp"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"/>
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="学分"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical">
+
+            </TextView>
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="学分"
+                android:layout_marginEnd="30dp"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:background="@drawable/shape"
+                android:paddingHorizontal="5dp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
         <Button
             android:id="@+id/btn1"
             android:layout_width="wrap_content"
