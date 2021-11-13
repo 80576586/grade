@@ -93,6 +93,8 @@ public class MainActivity3 extends AppCompatActivity {
                 else if (a1>100||c1>100||e1>100||g1>100){
 
                     Toast.makeText(MainActivity3.this, "请输入正确的成绩", Toast.LENGTH_SHORT).show();}
+                else if (b1==0||d1==0||f1==0||h1==0){
+                    Toast.makeText(MainActivity3.this, "请输入正确的学分", Toast.LENGTH_SHORT).show();}
 
                 else {
 
